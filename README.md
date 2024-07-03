@@ -1,0 +1,9 @@
+* This project arose as a need for my daily tasks. Regarding that I keep tracking of invoices on my current job and storing their data in excel files I had to fid a way to imrove it. I am not able to share real invoices as dataset so for this project I created custom invoices dataset in Adobe Photoshop and Canva PRO. All invoices are stored in uploads file, in both, jpg and pdf format.
+
+* The app is using Tesseract OCR engine in the background. First you have to install Tesseract on your system. On link https://tesseract-ocr.github.io/tessdoc/Installation.html  you have installations for all OS available. I used one for Windows from link https://github.com/UB-Mannheim/tesseract/wiki and downloaded 64 bits version. After installation of tesseract you have to add it (bin folder) to path in environments variable, please check instructions online. To be able to use it with python you will later install pytesseract in your project venv (attached in requirements.txt).
+
+* One important part is to be able to scan and scrap from pdf files and for pdf2image to function properly you have to install Poppler for Windows, please follow the instructions on link https://stackoverflow.com/questions/18381713/how-to-install-poppler-on-windows. 
+
+* The app allow you to browse and upload multiple PDF,jpg or jpeg files simultaneously. After browsing them you just have to click 'Upload File(s)' button and after few moments you will get confirmation 'Data successfully appended to excel file' and the excel file will become populated with new data. In the same folder where app is located you should store your invoices.xlsx file. 
+
+* If you need to accomodate the app to your personal needs you have to change regex funtions to search for patterns you need and change columns in excel file that should receive new data of interest. 
